@@ -95,9 +95,3 @@ background: #1b1d24; }
 .site-footer .footer-heading {
     font-size: 16px;
     color: #818186 !important; }
-
-.center-block {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}

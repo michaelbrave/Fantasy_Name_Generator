@@ -74,7 +74,7 @@ function bigEnough(str) {
 
 //check duplicates
 function notDupe (str) {
-	for (var i = 1; i < word_combine.length; i++) {
+	for (var i = 0; i < word_combine.length; i++) {
 		if (str == word_combine[i]) {
 			return (true);
 		}
@@ -104,12 +104,6 @@ function wordValidate(str, ) {
 		return(true);
 	}
 }
-
-//check against dictionary, reject those
-
-
-
-//greater variation
 
 
 
@@ -142,17 +136,14 @@ function generate() {
 	}
 	console.log("does it work " + word_combine);
 
-	//for (var i = 0; i < word_combine.length; i++) {
-	//document.getElementById('result').innerHTML = "<div><h2>" + word_combine + " " + "</h2></div>";
-	//} 
-
-	//how do I make it centered? containin another div? where how?
+	//makes new divs to hold the words
+	var result = document.getElementById('result');
 	for (var c in word_combine) {
 		var newElement = document.createElement('result');
 		newElement.id = word_combine[c];
 		newElement.className = "newword";
 		newElement.innerHTML = "<div><h2>" + word_combine[c] + "</h2></div>";
-		document.body.appendChild(newElement);
+		result.appendChild(newElement);
 	}
 }
 

@@ -81,6 +81,11 @@ function notDupe (str) {
 	}
 }
 
+//n-gram frequency weighed in
+
+
+
+
 //validates
 function wordValidate(str, ) {
 	if (hasVowel(str)){
